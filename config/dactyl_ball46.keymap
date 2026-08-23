@@ -1,0 +1,20 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                // ここにキー配置を書いていきます
+                // 今は仮の配置です（後で本格的に書き換えます）
+                &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y
+                &kp A  &kp S  &kp D  &kp F  &kp G  &kp H
+                &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N
+                &kp LCTRL  &kp LSHFT  &kp SPACE  &kp ENTER  &kp BSPC  &kp LGUI
+            >;
+        };
+    };
+};
